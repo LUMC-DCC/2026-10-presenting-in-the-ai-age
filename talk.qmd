@@ -4,10 +4,20 @@ format: revealjs
 editor: visual
 ---
 
+```{r}
+#| include: false
+df <- read.csv("data/readmissions.csv")
+all <- subset(df, ward == "All wards")
+all$after <- all$quarter >= "2025 Q1"
+before <- mean(all$rate[!all$after])
+after <- mean(all$rate[all$after])
+fmt <- function(x) sprintf("%.1f", x)
+```
+
 ## The question
 
 Did the new discharge protocol reduce 30-day readmissions?
 
 ## What we found
 
-Readmissions fell from 18.3% to 12.0%.
+Readmissions fell from `r fmt(before)`% to `r fmt(after)`%.
