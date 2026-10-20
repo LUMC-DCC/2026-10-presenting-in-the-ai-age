@@ -12,6 +12,7 @@ all$after <- all$quarter >= "2025 Q1"
 before <- mean(all$rate[!all$after])
 after <- mean(all$rate[all$after])
 fmt <- function(x) sprintf("%.1f", x)
+change <- round((after / before - 1) * 100)
 ```
 
 ## The question
@@ -21,3 +22,19 @@ Did the new discharge protocol reduce 30-day readmissions?
 ## What we found
 
 Readmissions fell from `r fmt(before)`% to `r fmt(after)`%.
+
+## Readmissions fell by `r abs(change)`% after the new protocol
+
+```{r}
+#| echo: false
+#| fig-alt: "Bar chart of the 30-day readmission rate per quarter for all wards: about 18% in 2024, about 12% from 2025 Q1, when the new protocol started."
+#| fig-width: 10
+#| fig-height: 5
+library(ggplot2)
+ggplot(all, aes(quarter, rate, fill = after)) +
+  geom_col(width = 0.7) +
+  scale_fill_manual(values = c(`FALSE` = "grey70", `TRUE` = "#003C7D"), guide = "none") +
+  labs(x = NULL, y = "30-day readmission rate (%)") +
+  theme_minimal(base_size = 18) +
+  theme(panel.grid.major.x = element_blank())
+```
