@@ -4,10 +4,21 @@ format: revealjs
 jupyter: python3
 ---
 
+```{python}
+#| include: false
+import pandas as pd
+
+df = pd.read_csv("data/readmissions.csv")
+all_wards = df[df["ward"] == "All wards"].copy()
+all_wards["after"] = all_wards["quarter"] >= "2025 Q1"
+before = all_wards.loc[~all_wards["after"], "rate"].mean()
+after = all_wards.loc[all_wards["after"], "rate"].mean()
+```
+
 ## The question
 
 Did the new discharge protocol reduce 30-day readmissions?
 
 ## What we found
 
-Readmissions fell from 18.3% to 12.0%.
+Readmissions fell from `{python} f"{before:.1f}"`% to `{python} f"{after:.1f}"`%.
