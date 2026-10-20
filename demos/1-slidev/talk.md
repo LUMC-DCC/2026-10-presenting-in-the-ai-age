@@ -1,0 +1,44 @@
+# Readmissions after the new discharge protocol
+
+Lab meeting, October 2026
+
+## The question
+
+Did the new discharge protocol, introduced in 2025 Q1, reduce 30-day readmissions?
+
+## What we did
+
+- Pulled the 30-day readmission rate per quarter for four wards, 2024 to 2025
+- Compared the four quarters before the switch with the four quarters after
+- Same wards, same case mix, same definition of readmission
+- Looked at every ward separately as well as all wards together
+- Checked that no ward changed its discharge criteria during the period
+
+Notes: mention that the numbers in this demo are synthetic.
+
+## What we found
+
+Readmissions fell from 18.3% to 12.0%, about a third fewer.
+
+| Ward | Before | After |
+| --- | --- | --- |
+| Cardiology | 19.8% | 12.7% |
+| Pulmonology | 21.1% | 14.6% |
+| Nephrology | 16.5% | 10.2% |
+| Geriatrics | 15.7% | 10.6% |
+
+Every ward moved by roughly the same amount.
+
+Notes: pause here. This is the slide people will remember.
+
+## Caveats
+
+- Only two years of data
+- No control wards: every ward switched at the same time
+- Other changes in 2025 could explain part of the drop
+
+## Next steps
+
+- Add the 2026 quarters as they come in
+- Check case mix formally, not just by eye
+- Present at the department meeting in December
