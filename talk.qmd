@@ -1,0 +1,24 @@
+---
+title: "Readmissions, in Python"
+format: revealjs
+jupyter: python3
+---
+
+## Quarto
+
+Quarto enables you to combine content and executable code into a finished presentation. To learn more about Quarto presentations see <https://quarto.org/docs/presentations/>.
+
+## Bullets
+
+When you render this file a presentation will be generated that includes:
+
+-   Content authored with markdown
+-   Output from executable code
+
+## Code
+
+The code runs when you render. You can embed Python like this:
+
+```{python}
+1 + 1
+```
