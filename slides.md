@@ -57,3 +57,13 @@ These are speaker notes. Only you see them, in presenter view.
 <ReadmissionChart />
 
 <div class="text-sm opacity-70">Grey: before the new protocol · Blue: from 2025 Q1 · synthetic data</div>
+
+---
+clicks: 4
+---
+
+## Every ward moved
+
+<WardChart />
+
+<div class="text-sm opacity-70">Click to highlight one ward at a time · synthetic data</div>
