@@ -1,0 +1,8 @@
+/.quarto/
+
+# rendered output: rebuild it with quarto preview / render
+*_files/
+*.html
+# Python
+__pycache__/
+.ipynb_checkpoints/
