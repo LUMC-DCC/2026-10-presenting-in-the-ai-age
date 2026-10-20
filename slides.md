@@ -64,11 +64,19 @@ src: ./sections/03b-case-vscode-claude.md
 ---
 
 ---
+src: ./sections/05-demo-steps.md#1
+---
+
+---
 src: ./sections/04-quarto.md
 ---
 
 ---
 src: ./sections/04b-case-rstudio-claude.md
+---
+
+---
+src: ./sections/05-demo-steps.md#2,3
 ---
 
 ---

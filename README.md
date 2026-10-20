@@ -13,11 +13,12 @@ and using an AI assistant (Claude) to build and tweak them.
 | `components/` | Vue chart components used in the deck |
 | `public/` | Images, the Menti QR code and the interactive chart |
 | `demos/` | The two live demos, the data, and prompts for the hands-on |
+| `hands-on/` | Step-by-step walkthrough: build, version and publish your own Slidev deck with AI ([PDF](hands-on/slidev-walkthrough.pdf) · [read online](hands-on/slidev-walkthrough.md)) |
 | `CLAUDE.md` | Briefing file Claude reads when working on this deck |
 
 ## Run the slides
 
-Needs Node 20+.
+Needs Node 22.12 or newer.
 
 ```bash
 npm install

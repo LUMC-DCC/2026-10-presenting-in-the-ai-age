@@ -10,7 +10,7 @@ layout: default
 
 <div class="rounded-xl border-t-4 border-indigo-500 border-x border-b border-slate-200 p-5">
 <div class="font-bold text-lg mb-2">A · VS Code + Slidev</div>
-<div class="opacity-70 mb-3">Node 20+, Claude Code or Copilot</div>
+<div class="opacity-70 mb-3">Node 22.12+ · step by step in <code>hands-on/</code></div>
 
 1. `npm init slidev@latest`
 2. Write a 5-line `CLAUDE.md`
