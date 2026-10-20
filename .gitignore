@@ -1,0 +1,9 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+/.quarto/
+# rendered output: rebuild it with Render
+*_files/
+*.html
