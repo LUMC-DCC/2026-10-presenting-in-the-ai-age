@@ -14,6 +14,9 @@ numbers stay yours.
 
 `talk.original.md` and `talk.original.qmd` are untouched copies, so you can start over.
 
+Want every step of the live demos, from an empty folder to the finished charts? Each step is a git
+tag on its own branch: see [Follow the live demos step by step](../README.md#follow-the-live-demos-step-by-step-git-tags).
+
 ## Demo 1 · Slidev
 
 ```bash
