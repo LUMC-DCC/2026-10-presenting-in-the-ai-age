@@ -13,6 +13,7 @@ all_wards = df[df["ward"] == "All wards"].copy()
 all_wards["after"] = all_wards["quarter"] >= "2025 Q1"
 before = all_wards.loc[~all_wards["after"], "rate"].mean()
 after = all_wards.loc[all_wards["after"], "rate"].mean()
+change = round((after / before - 1) * 100)
 ```
 
 ## The question
@@ -22,3 +23,21 @@ Did the new discharge protocol reduce 30-day readmissions?
 ## What we found
 
 Readmissions fell from `{python} f"{before:.1f}"`% to `{python} f"{after:.1f}"`%.
+
+## Readmissions fell by `{python} abs(change)`% after the new protocol
+
+```{python}
+#| echo: false
+#| fig-alt: "Bar chart of the 30-day readmission rate per quarter for all wards: about 18% in 2024, about 12% from 2025 Q1, when the new protocol started."
+import matplotlib.pyplot as plt
+
+colours = ["#003C7D" if a else "#b3b3b3" for a in all_wards["after"]]
+fig, ax = plt.subplots(figsize=(10, 5))
+ax.bar(all_wards["quarter"], all_wards["rate"], color=colours, width=0.7)
+ax.set_ylabel("30-day readmission rate (%)", fontsize=16)
+ax.tick_params(labelsize=14)
+ax.spines[["top", "right"]].set_visible(False)
+ax.yaxis.grid(True, color="#e5e5e5")
+ax.set_axisbelow(True)
+plt.show()
+```
