@@ -4,21 +4,10 @@ format: revealjs
 jupyter: python3
 ---
 
-## Quarto
+## The question
 
-Quarto enables you to combine content and executable code into a finished presentation. To learn more about Quarto presentations see <https://quarto.org/docs/presentations/>.
+Did the new discharge protocol reduce 30-day readmissions?
 
-## Bullets
+## What we found
 
-When you render this file a presentation will be generated that includes:
-
--   Content authored with markdown
--   Output from executable code
-
-## Code
-
-The code runs when you render. You can embed Python like this:
-
-```{python}
-1 + 1
-```
+Readmissions fell from 18.3% to 12.0%.
