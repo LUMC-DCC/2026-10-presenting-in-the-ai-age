@@ -49,3 +49,11 @@ Did the new discharge protocol reduce 30-day readmissions?
 <!--
 These are speaker notes. Only you see them, in presenter view.
 -->
+
+---
+
+## Readmissions per quarter, all wards
+
+<ReadmissionChart />
+
+<div class="text-sm opacity-70">Grey: before the new protocol · Blue: from 2025 Q1 · synthetic data</div>
